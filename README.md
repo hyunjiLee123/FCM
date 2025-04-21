@@ -21,8 +21,7 @@ parser.add_argument('--p', default=0.5, type=float, help='Random Frequency regio
 ```
 
 3. 구체적인 FCM 동작은 여기서 조절
-## FreqTune_transform.py
-```
+```FreqTune_transform.py
         height = 32
         width = 32        # cifar 이미지이므로 32x32로 고정
         img = np.array(x).astype(np.uint8)
