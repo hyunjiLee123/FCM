@@ -8,9 +8,9 @@
 This project supports CIFAR-10, CIFAR-100, and ImageNet datasets. Evaluation can be performed on their corresponding corruption benchmarks: CIFAR-10-C, CIFAR-100-C, and ImageNet-C.
 
 * Freqtune == FCM
-1. data_path 변경
+* ImageNet 사용 시 data파일에 추가 다운로드 필요 
 
-+ ImageNet 사용 시 data파일에 추가 다운로드 필요 
+1. data_path 변경
 ``` cifar.py
 parser.add_argument('--data_path', type=str, *default='/home/hyunji/Documents/FreqTune/data'*, required=False, help='Path to CIFAR and CIFAR-C directories')
 ```
