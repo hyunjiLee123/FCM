@@ -11,19 +11,23 @@ This project supports CIFAR-10, CIFAR-100, and ImageNet datasets. Evaluation can
 * ImageNet 사용 시 data파일에 추가 다운로드 필요 
 
 1. data_path 변경
+
 cifar.py :
 ```
 parser.add_argument('--data_path', type=str, *default='/home/hyunji/Documents/FreqTune/data'*, required=False, help='Path to CIFAR and CIFAR-C directories')
 ```
 
 2. FCM 비율은 여기서 조절
+
 cifar.py :
 ```
 parser.add_argument('--p', default=0.5, type=float, help='Random Frequency region, FreqTune')
 ```
 
 3. 구체적인 FCM 동작은 여기서 조절
-``` FreqTune_transform.py
+
+FreqTune_transform.py : 
+``` 
         height = 32
         width = 32        # cifar 이미지이므로 32x32로 고정
         img = np.array(x).astype(np.uint8)
