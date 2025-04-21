@@ -58,6 +58,8 @@ parser.add_argument('--p', default=0.5, type=float, help='Random Frequency regio
         return x
 ```
 
+4. 모델 train 후 결과는 snapshots 폴더!
+
 
 ## Usage
 
