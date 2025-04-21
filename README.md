@@ -8,7 +8,7 @@ This repository is based on [PixMix](https://github.com/andyzoujm/pixmix), with 
 
 * This project supports CIFAR-10, CIFAR-100, and ImageNet datasets.
 * Evaluation can be performed on their corresponding corruption benchmarks: CIFAR-10-C, CIFAR-100-C, and ImageNet-C.
-* Freqtune == FCM (같은 용어)
+* Freqtune == FCM
 
 1. dataset setting
 
@@ -21,11 +21,13 @@ This repository is based on [PixMix](https://github.com/andyzoujm/pixmix), with 
 
 2. dataset path setting
 
+change default
+
 example
 
 cifar.py : 
 ```
-        parser.add_argument('--data_path', type=str, * default='../Documents/FreqTune/data' *, required=False, help='Path to CIFAR and CIFAR-C directories')
+        parser.add_argument('--data_path', type=str, default='../Documents/FreqTune/data', required=False, help='Path to CIFAR and CIFAR-C directories')
 ```
 
 3. FCM ratio
