@@ -1,7 +1,7 @@
 # FCM
 "[Improving Model Robustness With Frequency Component Modification and Mixing](https://ieeexplore.ieee.org/document/10776988)"
 
-"This repository is based on "[PixMix](https://github.com/andyzoujm/pixmix)", with several modifications and extensions."
+"This repository is based on [PixMix](https://github.com/andyzoujm/pixmix), with several modifications and extensions."
 
 ## Contents
 
