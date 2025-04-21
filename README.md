@@ -10,18 +10,14 @@ This repository is based on [PixMix](https://github.com/andyzoujm/pixmix), with 
 * Evaluation can be performed on their corresponding corruption benchmarks: CIFAR-10-C, CIFAR-100-C, and ImageNet-C.
 * Freqtune == FCM
 
-1. dataset setting
-
-../FCM/data/cifar/
+1. dataset setting : ../FCM/data/cifar/
 
 * 프로젝트 파일에 data(2번에서 변경가능)폴더 안에 cifar폴더를 만들고 cifar10, cifar100, cifar10-c, cifar100-c를 넣는다.
 * cifar10, cifar100 : [download](https://www.cs.toronto.edu/~kriz/cifar.html)
 * cifar10-c : [download](https://paperswithcode.com/dataset/cifar-10c)
 * cifar100-c : [download](https://zenodo.org/records/3555552)
 
-2. dataset path setting
-
-change default
+2. dataset path setting : change default
 
 example
 
