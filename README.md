@@ -90,7 +90,7 @@ python cifar.py --dataset cifar100
 ## Evaluation
 1. To evaluate a trained CIFAR-10 model:
 ```
-  python cifar.py --resume <path_to_model> --evaluate
+python cifar.py --resume <path_to_model> --evaluate
 ```
 
 2. To evaluate a trained CIFAR-100 model:
