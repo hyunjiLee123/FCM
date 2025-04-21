@@ -24,21 +24,21 @@ This repository is based on [PixMix](https://github.com/andyzoujm/pixmix), with 
 example
 
 cifar.py : 
-'''
+```
         parser.add_argument('--data_path', type=str, * default='../Documents/FreqTune/data' *, required=False, help='Path to CIFAR and CIFAR-C directories')
-'''
+```
 
 3. FCM ratio
 
 cifar.py : 
-'''
+```
         parser.add_argument('--p', default=0.5, type=float, help='Random Frequency region, FreqTune
-'''
+```
 
 4. transform
 
 Freqtune_transform.py : 
-''' 
+``` 
         height = 32
         width = 32  # cifar 이미지이므로 32x32로 고정
         img = np.array(x).astype(np.uint8)
@@ -72,28 +72,28 @@ Freqtune_transform.py :
         new_image = np.clip(img, 0, 255).astype(np.uint8)  # 픽셀 뒤집힘 방지하기 위해 clip
         x = Image.fromarray(new_image)
         return x
-'''
+```
 
 5. Trained models are stored in the snapshots folder. Evaluation requires three files: model_best.pth.tar, checkpoint.pth.tar, dataset_model_training_log.csv(ex. cifar10_wrn_training_log.csv)
 
 ## Training
 1. To train on CIFAR-10 (default):
-'''
+```
 python cifar.py
-'''
+```
+
 2. To train on CIFAR-100:
-'''
+```
 python cifar.py --dataset cifar100
-'''
+```
 
 ## Evaluation
 1. To evaluate a trained CIFAR-10 model:
-  '''
+```
   python cifar.py --resume <path_to_model> --evaluate
-  '''
+```
 
 2. To evaluate a trained CIFAR-100 model:
-'''
+```
 python cifar.py --resume <path_to_model> --evaluate --dataset cifar100
-'''
-
+```
