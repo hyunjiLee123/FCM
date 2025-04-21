@@ -72,7 +72,9 @@ Freqtune_transform.py :
         return x
 ```
 
-5. Trained models are stored in the snapshots folder. Evaluation requires three files: model_best.pth.tar, checkpoint.pth.tar, dataset_model_training_log.csv(ex. cifar10_wrn_training_log.csv)
+5. Trained models are stored in the snapshots folder.
+
+Evaluation requires three files: model_best.pth.tar, checkpoint.pth.tar, dataset_model_training_log.csv(ex. cifar10_wrn_training_log.csv)
 
 ## Training
 1. To train on CIFAR-10 (default):
