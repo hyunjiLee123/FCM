@@ -25,14 +25,14 @@ example
 
 cifar.py : 
 '''
-parser.add_argument('--data_path', type=str, * default='../Documents/FreqTune/data' *, required=False, help='Path to CIFAR and CIFAR-C directories')
+        parser.add_argument('--data_path', type=str, * default='../Documents/FreqTune/data' *, required=False, help='Path to CIFAR and CIFAR-C directories')
 '''
 
 3. FCM ratio
 
 cifar.py : 
 '''
-parser.add_argument('--p', default=0.5, type=float, help='Random Frequency region, FreqTune
+        parser.add_argument('--p', default=0.5, type=float, help='Random Frequency region, FreqTune
 '''
 
 4. transform
@@ -43,7 +43,7 @@ Freqtune_transform.py :
         width = 32  # cifar 이미지이므로 32x32로 고정
         img = np.array(x).astype(np.uint8)
         fft_1 = np.fft.fftn(img)  # DFT(FCM은 shift진행x, 따라서 중앙이 고주파수 외곽이 저주파수)
-
+        
         # img pixel: matrix, make array: array
         # 랜덤 영역 뽑기(논문 내용대로)
         x_min = np.random.randint(width // 32, width // 2)
