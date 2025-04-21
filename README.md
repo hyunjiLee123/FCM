@@ -9,7 +9,7 @@ Freqtune == FCM
 
 ## Usage
 
-## 🏋️‍♂️ Training
+🏋️‍♂️ Training
 
 1. Train on CIFAR-10 (default)
 ```
@@ -21,7 +21,7 @@ python cifar.py
 python cifar.py --dataset cifar100
 ```
 
-## 📊 Evaluation
+📊 Evaluation
 
 1. Evaluate a trained CIFAR-10 model
 ```
